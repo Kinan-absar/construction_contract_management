@@ -12,10 +12,11 @@ Construction Contract Management
 - Variations
 - Construction workflow engine
     """,
-    'license": "OPL-1",
-    'price": 115.99,
-    'currency": 'USD',
-    'author': 'Kinan',
+    "author": "Kinan",
+    "website": "https://absar-alomran.com",
+    "license": "OPL-1",
+    "price": 114.99,
+    "currency": "USD",
     'category': 'Human Resources',
     'depends': [
         'base',
