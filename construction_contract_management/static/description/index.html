@@ -1,30 +1,85 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<style>
-  .app-wrap{max-width:1100px;margin:0 auto;font-family:Arial,Helvetica,sans-serif;color:#252a34;line-height:1.65}
-  .hero{padding:52px 32px;border-radius:18px;background:linear-gradient(135deg,#f5f2f7,#eef5f6);text-align:center;margin:20px 0 30px}
-  .hero h1{font-size:40px;margin:0 0 12px;color:#3b2943}.hero p{font-size:19px;max-width:820px;margin:0 auto;color:#52606d}
-  .badges{margin-top:20px}.badge{display:inline-block;margin:4px;padding:7px 12px;border-radius:20px;background:#714b67;color:#fff;font-size:13px;font-weight:700}
-  .section{padding:26px 8px}.section h2{text-align:center;font-size:29px;color:#3b2943;margin:0 0 18px}.lead{text-align:center;max-width:850px;margin:0 auto 26px;color:#56606b}
-  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{border:1px solid #e5e7eb;border-radius:14px;padding:20px;background:#fff;box-shadow:0 3px 14px rgba(0,0,0,.05)}
-  .card h3{font-size:18px;margin:0 0 8px;color:#714b67}.card p{margin:0;color:#4b5563}.shot{margin:22px auto;text-align:center}.shot img{max-width:100%;border:1px solid #ddd;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.08)}
-  .flow{padding:22px;border-radius:14px;background:#f8fafc;text-align:center;font-weight:700;color:#3b2943;margin:16px 0}.note{padding:18px 20px;border-left:4px solid #714b67;background:#faf7fb;border-radius:8px;margin:18px 0}
-  .footer{text-align:center;padding:30px 10px;color:#6b7280;border-top:1px solid #e5e7eb;margin-top:30px}
-  @media(max-width:700px){.grid{grid-template-columns:1fr}.hero h1{font-size:31px}.hero{padding:34px 18px}}
-</style>
-</head><body><div class='app-wrap'>
-<div class='hero'><h1>Construction Contract Management</h1><p>Manage client contracts and subcontracts from BOQ through measurements, IPCs, variations, advances, retention and accounting documents.</p><div class='badges'><span class='badge'>Contracts</span><span class='badge'>BOQ</span><span class='badge'>Measurements</span><span class='badge'>IPC</span><span class='badge'>Variations</span><span class='badge'>Retention</span></div></div>
-<section class='section'><h2>Construction Commercial Control in Odoo</h2><p class='lead'>Built for both revenue-side client contracts and cost-side subcontracts, with structured progress measurement and payment certification connected to Odoo Accounting.</p><div class='grid'>
-<div class='card'><h3>Client Contracts & Subcontracts</h3><p>Use one construction workflow for both contract directions while keeping partner, project, commercial and accounting context together.</p></div>
-<div class='card'><h3>BOQ Management</h3><p>Maintain contract BOQ lines and section-style display lines as the commercial baseline for measurements and payment certificates.</p></div>
-<div class='card'><h3>Measurements</h3><p>Create measurement records, load BOQ lines and move them through Draft, Submitted, Checked, Approved or Rejected stages before certification.</p></div>
-<div class='card'><h3>Interim Payment Certificates</h3><p>Prepare IPCs from approved progress, track payment status, submit for review, approve and complete the certificate workflow.</p></div>
-<div class='card'><h3>Invoice / Vendor Bill Integration</h3><p>Create the accounting move from an IPC or link an existing customer invoice/vendor bill when the accounting document was created separately.</p></div>
-<div class='card'><h3>Advance Payments</h3><p>Track contract advances and their accounting treatment as part of the construction contract lifecycle.</p></div>
-<div class='card'><h3>Variations</h3><p>Manage additions, omissions and other variation lines with submission, approval, rejection and reset controls.</p></div>
-<div class='card'><h3>Retention Release</h3><p>Record and release retention with configurable release methods, accounting document linkage and payment-status tracking.</p></div>
-<div class='card'><h3>Construction Dashboard</h3><p>Dedicated dashboard data and views provide a consolidated operational view of construction contract activity.</p></div>
-<div class='card'><h3>Professional Reports</h3><p>Printable reports are included for contracts, measurements, IPCs, variations, advances and retention releases.</p></div>
-</div></section>
-<section class='section'><h2>Optional Employee Portal Integration</h2><p class='lead'>The core app works independently. When Employee Portal Suite is also present, the included auto-install bridge can expose authorized contracts, IPCs, variations and measurements through the employee portal.</p></section>
-<div class='footer'>Odoo 18 • Commercial OPL-1 License</div>
-</div></body></html>
+<section class="container py-4">
+  <div class="text-center bg-light border rounded p-5 mb-5">
+    <h1 class="font-weight-bold mb-3" style="color:#3b2943;">Construction Contract Management</h1>
+    <p class="lead text-muted mx-auto mb-4">Manage client contracts and subcontracts from BOQ through measurements, IPCs, variations, advances, retention and accounting documents.</p>
+    <div>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Contracts</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">BOQ</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Measurements</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">IPC</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Variations</span>
+      <span class="badge badge-pill px-3 py-2 m-1" style="background-color:#714b67;color:#ffffff;">Retention</span>
+    </div>
+  </div>
+  <div class="mb-5">
+    <h2 class="text-center font-weight-bold mb-3" style="color:#3b2943;">Construction Commercial Control in Odoo</h2>
+    <p class="text-center text-muted mb-4">Built for both revenue-side client contracts and cost-side subcontracts, with structured progress measurement and payment certification connected to Odoo Accounting.</p>
+    <div class="row">
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Client Contracts &amp; Subcontracts</h3>
+          <p class="text-muted mb-0">Use one construction workflow for both contract directions while keeping partner, project, commercial and accounting context together.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">BOQ Management</h3>
+          <p class="text-muted mb-0">Maintain contract BOQ lines and section-style display lines as the commercial baseline for measurements and payment certificates.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Measurements</h3>
+          <p class="text-muted mb-0">Create measurement records, load BOQ lines and move them through Draft, Submitted, Checked, Approved or Rejected stages before certification.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Interim Payment Certificates</h3>
+          <p class="text-muted mb-0">Prepare IPCs from approved progress, track payment status, submit for review, approve and complete the certificate workflow.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Invoice / Vendor Bill Integration</h3>
+          <p class="text-muted mb-0">Create the accounting move from an IPC or link an existing customer invoice/vendor bill when the accounting document was created separately.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Advance Payments</h3>
+          <p class="text-muted mb-0">Track contract advances and their accounting treatment as part of the construction contract lifecycle.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Variations</h3>
+          <p class="text-muted mb-0">Manage additions, omissions and other variation lines with submission, approval, rejection and reset controls.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Retention Release</h3>
+          <p class="text-muted mb-0">Record and release retention with configurable release methods, accounting document linkage and payment-status tracking.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Construction Dashboard</h3>
+          <p class="text-muted mb-0">Dedicated dashboard data and views provide a consolidated operational view of construction contract activity.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="h-100 border rounded p-4 bg-white">
+          <h3 class="h5 font-weight-bold mb-2" style="color:#714b67;">Professional Reports</h3>
+          <p class="text-muted mb-0">Printable reports are included for contracts, measurements, IPCs, variations, advances and retention releases.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mb-5">
+    <h2 class="text-center font-weight-bold mb-3" style="color:#3b2943;">Optional Employee Portal Integration</h2>
+    <p class="text-center text-muted mb-4">The core app works independently. When Employee Portal Suite is also present, the included auto-install bridge can expose authorized contracts, IPCs, variations and measurements through the employee portal.</p>
+  </div>
+  <div class="text-center text-muted border-top pt-4 mt-5">Odoo 18 • Commercial OPL-1 License</div>
+</section>
