@@ -33,6 +33,8 @@ class ConstructionAdvance(models.Model):
         ('partial', 'Partially Paid'),
         ('in_payment', 'In Payment'),
         ('paid', 'Paid'),
+        ('reversed', 'Reversed'),
+        ('invoicing_legacy', 'Legacy Invoicing'),
         ('cancelled', 'Cancelled'),
     ], string='Payment Status', compute='_compute_payment_status', store=True)
 
@@ -73,11 +75,12 @@ class ConstructionAdvance(models.Model):
             else:
                 rec.payment_status = move.payment_state or 'not_paid'
 
-    @api.model
-    def create(self, vals):
-        if vals.get('name', 'New') == 'New':
-            vals['name'] = self.env['ir.sequence'].next_by_code('construction.advance') or 'New'
-        return super().create(vals)
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if vals.get('name', 'New') == 'New':
+                vals['name'] = self.env['ir.sequence'].next_by_code('construction.advance') or 'New'
+        return super().create(vals_list)
 
     def _check_accounting_setup(self):
         for rec in self:
