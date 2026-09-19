@@ -14,12 +14,13 @@ Construction Contract Management
 
 This module is fully standalone (backend only). If you also use Employee
 Portal Suite and want employees to view contracts/IPCs/variations/measurements
-from the employee portal, install the separate
-"Construction Contract Management - Employee Portal Bridge" module as well.
+from the employee portal, the included integration bridge activates automatically when both modules are available.
     """,
     'category': 'Construction',
     'author': 'Your Company',
-    'license': 'LGPL-3',
+    'license': 'OPL-1',
+    'price': 114.99,
+    'currency': 'USD',
     'depends': [
         'base',
         'mail',
