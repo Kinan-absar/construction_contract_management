@@ -1,6 +1,6 @@
 {
     'name': 'Construction Contract Management',
-    'version': '18.0.1.0.0',
+    'version': '18.0.1.4.0',
     'summary': 'Dual-mode construction contract and subcontract management',
     'description': """
 Construction Contract Management
@@ -11,13 +11,15 @@ Construction Contract Management
 - IPC
 - Variations
 - Construction workflow engine
+
+This module is fully standalone (backend only). If you also use Employee
+Portal Suite and want employees to view contracts/IPCs/variations/measurements
+from the employee portal, install the separate
+"Construction Contract Management - Employee Portal Bridge" module as well.
     """,
-    "author": "Kinan",
-    "website": "https://absar-alomran.com",
-    "license": "OPL-1",
-    "price": 114.99,
-    "currency": "USD",
-    'category': 'Human Resources',
+    'category': 'Construction',
+    'author': 'Your Company',
+    'license': 'LGPL-3',
     'depends': [
         'base',
         'mail',
@@ -47,15 +49,11 @@ Construction Contract Management
         'views/construction_contract_views.xml',
         'views/construction_measurement_views.xml',
         'views/construction_ipc_views.xml',
+        'views/construction_ipc_link_move_wizard_views.xml',
         'views/construction_variation_views.xml',
         'views/construction_advance_views.xml',
         'views/construction_retention_release_views.xml',
         'views/construction_menus.xml',
-        'views/portal/employee_dashboard_extension.xml',
-        'views/portal/portal_employee_contract_templates.xml',
-        'views/portal/portal_employee_ipc_templates.xml',
-        'views/portal/portal_employee_variation_templates.xml',
-        'views/portal/portal_employee_measurement_templates.xml',
     ],
     'assets': {
         'web.assets_backend': [
