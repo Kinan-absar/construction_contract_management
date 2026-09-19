@@ -4,7 +4,7 @@
     'summary': 'Dual-mode construction contract and subcontract management',
     'description': '\nConstruction Contract Management\n\n- Client contracts / subcontracts\n- BOQ\n- Measurements\n- IPC\n- Variations\n- Construction workflow engine\n\nThis module is fully standalone (backend only). If you also use Employee\nPortal Suite and want employees to view contracts/IPCs/variations/measurements\nfrom the employee portal, the included integration bridge activates automatically when both modules are available.\n    ',
     'category': 'Construction',
-    'author': 'Your Company',
+    'author': 'Kinan',
     'license': 'OPL-1',
     'price': 114.99,
     'currency': 'USD',
