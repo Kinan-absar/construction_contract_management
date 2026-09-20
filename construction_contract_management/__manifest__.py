@@ -19,6 +19,7 @@ from the employee portal, install the separate
     """,
     'category': 'Construction',
     'author': 'Kinan',
+    'live_test_url': 'https://www.absar-alomran.com/request-demo',
     "license": 'OPL-1',
     "currency": 'USD',
     "price": 114.99,
