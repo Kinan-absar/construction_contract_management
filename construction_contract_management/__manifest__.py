@@ -5,6 +5,7 @@
     'description': '\nConstruction Contract Management\n\n- Client contracts / subcontracts\n- BOQ\n- Measurements\n- IPC\n- Variations\n- Construction workflow engine\n\nThis module is fully standalone (backend only). If you also use Employee\nPortal Suite and want employees to view contracts/IPCs/variations/measurements\nfrom the employee portal, the included integration bridge activates automatically when both modules are available.\n    ',
     'category': 'Construction',
     'author': 'Kinan',
+    'live_test_url': 'https://www.absar-alomran.com/request-demo',
     'license': 'OPL-1',
     'price': 114.99,
     'currency': 'USD',
