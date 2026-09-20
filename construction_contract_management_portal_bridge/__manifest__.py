@@ -17,7 +17,7 @@ Adds:
     """,
     'category': 'Construction',
     'author': 'Kinan',
-    'license': 'OPL-1',
+    'license': 'LGPL-3',
     'application': False,
     'installable': True,
     'auto_install': True,
