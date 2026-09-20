@@ -1,6 +1,6 @@
 {
     'name': 'Construction Contract Management',
-    'version': '18.0.1.4.0',
+    'version': '19.0.1.1.0',
     'summary': 'Dual-mode construction contract and subcontract management',
     'description': """
 Construction Contract Management
@@ -18,8 +18,10 @@ from the employee portal, install the separate
 "Construction Contract Management - Employee Portal Bridge" module as well.
     """,
     'category': 'Construction',
-    'author': 'Your Company',
-    'license': 'LGPL-3',
+    'author': 'Kinan',
+    "license": 'OPL-1',
+    "currency": 'USD',
+    "price": 114.99,
     'depends': [
         'base',
         'mail',
@@ -29,7 +31,7 @@ from the employee portal, install the separate
         'uom',
         'portal',
     ],
-    'images': ['static/description/icon.png'],
+    "images": ['images/main_screenshot.png'],
     'data': [
         'security/construction_security.xml',
         'security/construction_portal_security.xml',

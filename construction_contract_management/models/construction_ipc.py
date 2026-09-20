@@ -388,6 +388,8 @@ class ConstructionIPC(models.Model):
         """Return the base filename for PDF reports"""
         self.ensure_one()
         return f"IPC_{self.name}"
+
+
 class ConstructionIPCLinkMoveWizard(models.TransientModel):
     _name = 'construction.ipc.link.move.wizard'
     _description = 'Link Existing Invoice/Bill to IPC'
