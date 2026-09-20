@@ -16,7 +16,7 @@ Adds:
 ✔ Dashboard cards on the Employee Portal home page
     """,
     'category': 'Construction',
-    'author': 'Kinan,
+    'author': 'Kinan',
     'license': 'LGPL-3',
     'application': False,
     'installable': True,
