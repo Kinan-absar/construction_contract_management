@@ -1,6 +1,6 @@
 {
     'name': 'Construction Contract Management',
-    'version': '18.0.1.4.0',
+    'version': '18.0.1.4.1',
     'summary': 'Dual-mode construction contract and subcontract management',
     'description': '\nConstruction Contract Management\n\n- Client contracts / subcontracts\n- BOQ\n- Measurements\n- IPC\n- Variations\n- Construction workflow engine\n\nThis module is fully standalone (backend only). If you also use Employee\nPortal Suite and want employees to view contracts/IPCs/variations/measurements\nfrom the employee portal, the included integration bridge activates automatically when both modules are available.\n    ',
     'category': 'Construction',
@@ -12,7 +12,14 @@
     'depends': ['base', 'mail', 'hr', 'project', 'account', 'uom', 'portal'],
     'images': ['images/main_screenshot.png'],
     'data': ['security/construction_security.xml', 'security/construction_portal_security.xml', 'security/ir.model.access.csv', 'security/construction_portal_rules.xml', 'data/construction_dashboard_data.xml', 'views/construction_sequence.xml', 'views/construction_dashboard_views.xml', 'reports/report_actions.xml', 'reports/construction_report_common.xml', 'reports/construction_contract_report.xml', 'reports/construction_measurement_report.xml', 'reports/construction_ipc_report.xml', 'reports/construction_variation_report.xml', 'reports/construction_advance_report.xml', 'reports/construction_retention_release_report.xml', 'views/construction_contract_views.xml', 'views/construction_measurement_views.xml', 'views/construction_ipc_views.xml', 'views/construction_ipc_link_move_wizard_views.xml', 'views/construction_variation_views.xml', 'views/construction_advance_views.xml', 'views/construction_retention_release_views.xml', 'views/construction_menus.xml'],
-    'assets': {'web.assets_backend': ['construction_contract_management/static/src/css/construction_dashboard.css']},
+    'assets': {
+        'web.assets_backend': [
+            'construction_contract_management/static/src/css/construction_dashboard.css',
+            'construction_contract_management/static/src/css/demo_construction_tour.css',
+            'construction_contract_management/static/src/js/demo_construction_tour.js',
+            'construction_contract_management/static/src/xml/demo_construction_tour.xml',
+        ],
+    },
     'application': True,
     'installable': True,
 }
